@@ -14,6 +14,12 @@ function main(){
         $text=$_POST['text'];
         //алгоритм
 
+        $mass=[];
+        $newSplitted=[];
+        $splitted = preg_split('//u', $text, null, PREG_SPLIT_NO_EMPTY);
+      
+        var_dump($splitted);
+
         $finalText = $text;
 
 
